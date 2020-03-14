@@ -269,7 +269,7 @@ body{
   margin-bottom:8px;
 }
 
-a {color:#0E6EBA;}
+
 a:hover {text-decoration:none}	
 
 
@@ -278,12 +278,14 @@ css/style.css
 ===========================================================================*/
 
 body {
-	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-	background-color: #138ece;
+	
 	margin: 0;
 	padding: 0;
 	color: #000;
 	border: 0.063em solid #cccc66;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	}
 
 /* ~~ Element/tag selectors ~~ */
@@ -301,33 +303,6 @@ a img { /* this selector removes the default blue border displayed in some brows
 	border: none;
 }
 
-/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
-a:link {
-	color:#fff;
-	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
-	font-size:100%;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-}
-
-.content a:link {
-	color:#00e;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
-}
-
-a:visited {
-	color: #00e;
-	text-decoration: none;
-	font-size:100%;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-}
-a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
-	color:#006fb5;
-	text-decoration: none;
-	font-size: 98%;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-weight:bold;
-}
 
 .mReadings	{
 	font-size:x-large;
@@ -501,40 +476,6 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	width:6em;
 }
 
-.left	{
-	background-color: #9bcdec;
-}
-
-.left a:link, a:visited, a:hover, a:active, a:focus {
-	
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	}
-
-.container {
-	border: 0.063em solid #cccc66;
-	width: 100%;
-	max-width: 93.750em;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
-	min-width: 48.750em;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
-	background-color: #138ece;
-	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
-}
-
-.container a:link, a:visited 	{
-	 /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
-	text-decoration: none;
-	font-size: 100%;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-weight:normal;
-	}
-	
-.container a:hover, a:active, a:focus	{
-	color:#00e;
-	text-decoration: none;
-	font-size: 90%;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-weight:700;
-	border:none;
-	}
 
 .mContainer {
 	border: 0.063em solid #cccc66;
@@ -637,12 +578,6 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	margin-top: 2em;
 	}
 		
-.area a:link, .area a:visited		{
-	color: #cccc66;
-	background-color:#006fb5;
-	font-family: alegreya, serif;
-		font-size:80%;
-		}
 		
 .area a:hover, .area a:active, .area a:focus		{
 	color: #cccc66;
@@ -754,3 +689,35 @@ new adds
   color:#cccc66;
 
 } 
+
+.main {
+  max-width: 640px;
+  margin: auto;
+}
+  
+.container {
+
+  margin-top: 1rem;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  }
+
+.container a {
+  margin: 3px;
+}
+  
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 2.5px 5px rgba(25, 25, 25, 0.1);
+}
+
+.nav p {
+	text-align: center;
+	color: white; 
+}
