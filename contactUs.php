@@ -2,73 +2,63 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>NA Literature Mobile</title>
+<title>Contact WASCNA Webmaster Mobile</title>
 
 <link rel="icon" href="images/images/flavicon.ico">
 
-<link rel="icon" href="images/images/flavicon.ico">
-<meta name="description" content="Mobile Site: NA Literature and Meeting Readings" />
+<link rel="icon" href="images/images/flavicon.ico"><meta name="description" content="Mobile Site: Contact WASCNA Webmaster" />
 <meta name="keywords" content="narcotics anonymous, na, steubenville, barnesville, bridgeport, st. clarisville, toronto, ohio, new martinsville, payden city, wheeling, west virginia, na steubenville, na barnesville, na bridgeport, na st. clarisville, na toronto, naohio, na new martinsville, na payden city, na wheeling, na west virginia, steubenville na, barnesville na, bridgeport na, st. clarisville na, toronto na, ohio na, new martinsville na, payden city na, wheeling na, west virginia na, meetings, literature, na literature, wascna, steubenville narcotics anonymous, barnesville narcotics anonymous, bridgeport narcotics anonymous, st. clarisville narcotics anonymous, toronto narcotics anonymous, ohio narcotics anonymous, new martinsville narcotics anonymous, payden city narcotics anonymous, wheeling narcotics anonymous, west virginia narcotics anonymous, na meetings steubenville, na meetings barnesville, na meetings bridgeport, na meetings st. clarisville, na meetings toronto, na meetings ohio, na meetings new martinsville, na meetings payden city, na meetings wheeling, na meetings west virginia, narcotics anonymous meetings, local na meetings, na meetings near me, na meeting list, 12 step, recovery, " />
 <meta name="robots" content="index, nofollow" />
-<link href="wheelingAreaStyle.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
 <img src="images/mBanner.jpg" alt="Wheeling Area Service Committee of Narcotics Anonymous Logo, website banner" name="Web Banner Logo, Wheeling Area Service Committee of Narcotics Anonymous" width="100%" id="WASCNA Logo" style="background-color: #8090AB;">
+ 
+    <h2>Please contact us using this form:</h2>
+	
+<form name="Contact"  enctype="multipart/form-data" method="post" action="verify.php">
+<table width="300" cellpadding="0" cellspacing="3">
+    <tr>
+        <td>Name:</td>
+        <td><input name="Name" type="text" size="30"></td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td><input name="Email" type="text" size="30"></td>
+    </tr>
+    <tr>
+        <td>Subject:</td>
+        <td><input name="Subject" type="text" size="30"></td>
+    </tr>
+    <tr>
+        <td valign="top">Message:</td>
+        <td><textarea cols="30" rows="6" name="Msg"></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+        
+        <div class="g-recaptcha" data-sitekey="6LfIfQMTAAAAAIHuab7A04Ke4Guj9Ahyj0hAHiH8"></div>
+        
+        <input type="submit" value="Send" name="Send">&nbsp; &nbsp; <input type="reset" value="Clear" name="reset"></td>
+    </tr>
+</table>
+</form>
 
-	
-    <div class="Content">
-    
-    <div class="mLiterature">
-    
-    &nbsp;<br />
-    
-    <p><a style="display:inline;" href="mReadings.html">Meeting Readings</a></p>
-    
-    <p><a style="display:inline;" href="mJFTemailSub.html">Just For Today Email Subscription</a></p>
-    
-    <p><a style="display:inline;" href="http://www.na.org/?ID=ips-eng-index" target="_blank">Informational Pamphlets (IPs)</a></p>
-    
-    <img src="images/Welcome.jpg" alt="Narcotics Anonymous IP#22 &quot;Welcome to NA&quot;" width="70" height="152" align="right" />
-    
-    <img src="images/Who.jpg" alt="Narcotics Anonymous IP#1 &quot;Who, What, How, and Why&quot;" width="70" height="152" align="right" />
-    
-    <img src="images/Newcomer.jpg" alt="Narcotics Anonymous IP#16 &quot;For the Newcomer&quot;" width="70" height="152" align="right" />
-    
-    <img src="images/Addict.jpg" alt="Narcotics Anonymous IP#7 &quot;Am I an Addict?&quot;" width="70" height="152" align="right" />
-    
-    <img src="images/Sponsorship.gif" alt="Narcotics Anonymous IP#11 &quot;Sponsorship&quot;" width="70" height="152" align="right" />
-    
-    <p>&nbsp;</p>
-	
-    <p align="center">NA Books are generally available at cost at most <a style="display:inline;" href="mMeetings.html">NA meetings</a>.</p>
-</div>
-	  </div>
-  <div style class="footer">
+  <div class="footer">
     <p align="center">Helpline Phone Number<br />
     <b>(888)251-2426</b></p>
 	<p align="center">WASCNA<br />
     P.O. Box 6837<br />
     Wheeling, WV 26003</p>
-   
-	<p><a href="mContactUs.php">Contact Us</a>.</p>
+   	      
+    <p>Please address issues with this website using the form above.</p>
     <p style="font-size:small; align:center;">&copy;2018 WASCNA</p>
+
       
     <!-- end .footer --></div>
-   
-	
-
-	<!-- #EndEditable --> 
-</body>
-	
-<!-- #EndTemplate -->
-	
-	
-
-
-
+  <!-- end .container --></div>
 </body>
 </html>
