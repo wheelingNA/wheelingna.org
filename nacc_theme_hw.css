@@ -1,0 +1,60 @@
+/*
+	Styles for the NA Cleantime Calculator (NACC).
+
+	It Works, How & Why Gold/Green Theme
+*/
+
+/* Basic usability: always underline links at rest. I know graphic designers like
+to sneer and call it "visually primitive," while affecting an expression exactly
+as if there was a very small turd directly under their nose, but we need to be as
+accessible as possible. NA has a disproportionate number of disabled members.
+It's also a real good idea to change the color dramatically. There's a reason
+that most sites use blue and red. Try using a colorblind simulator. They show up.
+*/
+
+div.nacc_main {
+	background-color: goldenrod;
+}
+
+div.nacc_results {
+	background-color: darkgreen;
+}
+
+div.nacc_msg,
+div.nacc_keytags {
+	background-color: #efefef;
+	color: black;
+}
+
+span.nacc_title {
+	border-bottom: 1px solid darkgreen;
+	color: darkgreen;
+}
+
+span.nacc_prompt {
+	color: darkgreen;
+}
+
+a.nacc_reset_link:visited,
+a.nacc_reset_link {
+	color: darkgreen;
+	text-decoration: underline;
+}
+
+a.nacc_reset_link:active,
+a.nacc_reset_link:hover {
+	color: green;
+	text-decoration: none;
+}
+
+a.nacc_change_link:visited,
+a.nacc_change_link {
+	color: darkgreen;
+	text-decoration: underline;
+}
+
+a.nacc_change_link:active,
+a.nacc_change_link:hover {
+	color: green;
+	text-decoration: none;
+}

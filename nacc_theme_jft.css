@@ -1,0 +1,60 @@
+/*
+	Styles for the NA Cleantime Calculator (NACC).
+
+	Just For Today Gray/Maroon Theme
+*/
+
+/* Basic usability: always underline links at rest. I know graphic designers like
+to sneer and call it "visually primitive," while affecting an expression exactly
+as if there was a very small turd directly under their nose, but we need to be as
+accessible as possible. NA has a disproportionate number of disabled members.
+It's also a real good idea to change the color dramatically. There's a reason
+that most sites use blue and red. Try using a colorblind simulator. They show up.
+*/
+
+div.nacc_main {
+	background-color: gainsboro;
+}
+
+div.nacc_results {
+	background-color: gainsboro;
+}
+
+div.nacc_msg,
+div.nacc_keytags {
+	background-color: #efefef;
+	color: black;
+}
+
+span.nacc_title {
+	border-bottom: 1px solid maroon;
+	color: maroon;
+}
+
+span.nacc_prompt {
+	color: maroon;
+}
+
+a.nacc_reset_link:visited,
+a.nacc_reset_link {
+	color: maroon;
+	text-decoration: underline;
+}
+
+a.nacc_reset_link:active,
+a.nacc_reset_link:hover {
+	color: crimson;
+	text-decoration: none;
+}
+
+a.nacc_change_link:visited,
+a.nacc_change_link {
+	color: maroon;
+	text-decoration: underline;
+}
+
+a.nacc_change_link:active,
+a.nacc_change_link:hover {
+	color: crimson;
+	text-decoration: none;
+}

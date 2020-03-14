@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    	<title>NACC Documentation</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <!--[if lte IE 6]>
+            <script type="text/javascript">
+            // <![CDATA[
+                function getElementsByClassName (className, nodeList) {
+                    var returnElms = new Array();
+                    var className = className.replace(/\-/g, "\\-");
+                    var regExp = new RegExp("(^|\\s)" + className + "(\\s|$)");
+                    if ( !nodeList ) {
+                        nodeList = document.body.childNodes;
+                        }
+                    if ( nodeList ) {
+                        var ii = 0;
+                        for(var i=0; i < nodeList.length; i++){
+                            elm = nodeList[i];		
+                            if ( regExp.test( elm.className ) ){
+                                returnElms[ii++] = elm;
+                            }
+                            if ( elm.childNodes && elm.childNodes.length ) {
+                                returnElms = returnElms.concat(getElementsByClassName (className, elm.childNodes));
+                                }
+                        }
+                    }
+                    return (returnElms);
+                }
+                
+                function IE_Ify(className) {
+                    var elems = getElementsByClassName ( className );
+                    for ( var i = 0; i < elems.length; i++ ) {
+                        elems[i].className += '_ie';
+                        }
+                }
+                
+                window.onload=function() {
+                    document.getElementById('thebeanie').className='nacc_logo_static_ie';
+                    IE_Ify ( 'white_tag' );
+                    IE_Ify ( 'orange_tag' );
+                    IE_Ify ( 'green_tag' );
+                    IE_Ify ( 'red_tag' );
+                    IE_Ify ( 'blue_tag' );
+                    IE_Ify ( 'yellow_tag' );
+                    IE_Ify ( 'dayglo_tag' );
+                    IE_Ify ( 'gray_tag' );
+                    IE_Ify ( 'black_tag' );
+                    }
+            // ]]>
+            </script>
+        <![endif]-->
+    </head>
+    <body id="body_index">
+        <div id="main_content">
+            <div id="nacc_content">
+                <div id="sidebar">
+                    <a class="nacc_home_logo" id="home_link_resolved"><img src="../images/one_pixel.gif" alt="Beanie Logo" border="0" class="nacc_logo_static" id="thebeanie"/></a>
+                    <ul id="navbar">
+                        <li><a id="home_link" href="index.html">About NACC</a><span id="home_span">About NACC</span></li>
+                        <li><a id="install_link" href="install.html">Installing NACC</a><span id="install_span">Installing NACC</span></li>
+                    		<li><a id="theme_link" href="themes.html">NACC Themes</a><span id="theme_span">NACC Themes</span></li>
+                    		<li><a id="custom_link" href="customizing.html">Customized NACC</a><span id="custom_span">Customized NACC</span></li>
+                    </ul>
+               </div>
+                <div id="nacc_content_text">
+                    <h1 id="nacc_header">The N.A. Cleantime Calculator (NACC) </h1>
+                   <div id="text_content">
+                        <h2 class="pageHeader">About NACC</h2>
+                      <p class="first">The N.A. Cleantime Calculator is a DHTML cleantime
+                        	calculator, designed by N.A. members, for N.A. members.
+                        	Unlike some calculators that use PHP, this requires
+                        	that the user's browser support JavaScript. It's pretty
+                        	easy to install and customize (covered in greater
+                       	 detail below). </p>
+                      <p>This uses the same formula we always use when we calculate
+                       	 cleantime in N.A. meetings, and assign keytags:</p>
+                      <blockquote class="dark">
+							 <ul>
+								 <li>If the  person has 0 or more days, they should have
+                        		a white key tag.
+									 <div class="image_display"><img class="white_tag" src="../images/one_pixel.gif" alt="white tag" /></div></li>
+                 	  		 <li>If the person has 30 or more days, they should have
+                    	  			an orange tag.
+									 <div class="image_display"><img class="orange_tag" src="../images/one_pixel.gif" alt="orange tag" /></div></li>
+                    		 <li>If the person has 60 or more days, they should have
+                       			a green tag.
+									 <div class="image_display"><img class="green_tag" src="../images/one_pixel.gif" alt="green tag" /></div></li>
+                    		 <li>If the person has 90 or more days, they should have
+                       			a red tag.
+									 <div class="image_display"><img class="red_tag" src="../images/one_pixel.gif" alt="red tag" /></div></li>
+                    		 <li><em>At this point, we start measuring by months.</em></li>
+                    		 <li>If
+                       			the person has 6 or more months, they should have
+                       			a blue tag.
+									 <div class="image_display"><img class="blue_tag" src="../images/one_pixel.gif" alt="blue tag" /></div></li>
+                    		 <li>If the person has 9 or more months, they should
+                       			have a yellow tag.
+									 <div class="image_display"><img class="yellow_tag" src="../images/one_pixel.gif" alt="yellow tag" /></div></li>
+                    		 <li>If the person has 12 or more months (one year),
+                       			they should have a glow-in-the-dark tag.
+									 <div class="image_display"><img class="dayglo_tag" src="../images/one_pixel.gif" alt="dayglo tag" /></div></li>
+                    		 <li>If the person has 18 or more months (a year and
+                       			a half), they should have a gray tag.
+									 <div class="image_display"><img class="gray_tag" src="../images/one_pixel.gif" alt="gray tag" /></div></li>
+                    		 <li><em>At this point, we start measuring by years.</em></li>
+                    		 <li>If the person has two or more years, they should
+                       			get a black tag for each year more than one. 
+									 <div class="image_display"><img class="black_tag" src="../images/one_pixel.gif" alt="black tag" /></div></li>
+                       </ul>
+                      </blockquote>
+							 <p>The NACC will allow the visitor to enter their cleantime, then displays
+							 	a natural English phrase that reports their cleantime
+							 	in total days. If they have more than 90 days, it will
+							 	also mention how many years, months and days they have.</p>
+							 <p>The NACC is completely <a href="http://w3schools.com/js/">JavaScript</a>-based.
+							 	This means that any Web site that wants to use it, can
+							 	use it. It does not rely on special server technologies
+							 	like <a href="http://w3schools.com/js/">PHP</a> or <a href="http://www.ruby-lang.org/en/">Ruby</a>,
+							 	nor does it require a plugin on the user's browser, like <a href="http://www.adobe.com/products/flashplayer/">Flash</a>.
+							 	It was meant to be taken by Web designers of all skill
+							 	levels, and used in their site. </p>
+							 <p>The NACC is pretty easy to &quot;theme.&quot; It uses <a href="http://www.w3schools.com/css/">CSS</a> to
+							 	do all of its presentation, and  <a href="http://www.stuffandnonsense.co.uk/archives/css_specificity_wars.html">low-specificity
+							 	CSS</a> for as many elements as possible. The code will validate <a href="http://www.w3schools.com/xhtml/">XHTML</a> <a href="http://www.w3.org/TR/xhtml11/">1.1</a>,
+							 	so it will work in almost any page out there. The tags
+							 	are displayed as <a href="http://www.libpng.org/pub/png/">PNG</a> files
+							 	(Note how attractive they are), so they will look good
+							 	against any background. We use <a href="http://support.microsoft.com/kb/294714">special
+							 	CSS</a> for Internet Explorer
+							 	6 and below, which don't display PNG as easily as do
+							 	other browsers. </p>
+							 <p>Basically, NACC is a completely &quot;plug and play&quot; cleantime calculator.
+							 	It's easy to install and use. It's attractive and fun,
+							 	and you can get fancy with it if you so desire.</p>
+							 <p>The NACC is completely free for anyone to use. It is designed specifically
+							 	for N.A. members, so others may not find much utility
+							 	in it.</p>
+							 <p>It is being shared from a deep gratitude for N.A. and all it has done
+							 	for us.   </p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

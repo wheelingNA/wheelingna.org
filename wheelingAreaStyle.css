@@ -1,0 +1,477 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #138ece;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	border: 0.063em solid #cccc66;
+	}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 0.938em;
+	padding-left: 0.938em; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-family: alegreya, serif;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color:#fff;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+	font-size:100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.content a:link {
+	color:#00e;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+
+a:visited {
+	color: #00e;
+	text-decoration: none;
+	font-size:100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	color:#006fb5;
+	text-decoration: none;
+	font-size: 98%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+.mReadings	{
+	font-size:x-large;
+	font-family: alegreya, serif;
+	background-color: #9bcdec;
+}
+
+.mPermission	{
+	font-size:small;
+	font-family: alegreya, serif;
+}
+
+.mMeetings {
+	background-color:#9bcdec;
+	position:relative;
+	overflow:hidden;
+}
+
+.mLiterature {
+	font-size:1.2em;
+	background-color: #9bcdec;
+	position:relative;
+	overflow:hidden;
+}
+
+.mLiterature a:link {
+	color: #00e;
+}
+	
+.mLiterature a:hover, a:active, a:focus	{
+	color:#ffffff;
+		font-size:95%;
+	font-weight:bold;	
+}
+
+.days a:link {
+	
+	background-color: #9bcdec;
+	color: #00e;
+	font-family:'Courier New', Courier, monospace;
+	border-style:outset;
+	border-width:0.063em;
+	font-weight:bold;
+	border-color:#cccc66;
+	padding:0.250em;
+	margin-left:0.188em;
+	position:relative;
+	padding-left:0.1em;
+	padding-right:0.1em;
+	}
+	
+	
+.days a:hover, a:active, a:focus	{
+	color:#00e;
+	background-color:#ffffff;
+	font-family:'Courier New', Courier, monospace;
+	border-style:outset;
+	font-size:95%;
+	font-weight:bold;
+	border-width:.09em;
+	border-color:#cccc66;
+	margin-left:0.188em;
+	position:relative;
+	padding-left:0.125em;
+	padding-right:0.125em;
+}
+
+.mDays	{width:100%;}
+
+.mDays a:link {	
+	background-color: #9bcdec;
+	color: #00e;
+	font-family:'Courier New', Courier, monospace;
+	border-style:outset;
+	border-width:0.063em;
+	font-weight:bold;
+	border-color:#cccc66;
+	padding:0.250em;
+	margin-left:0.188em;
+	position:relative;
+	padding-left:0.125em;
+	padding-right:0.125em;
+	}
+	
+	
+.mDays a:hover, a:active, a:focus	{
+	color:#00e;
+	background-color:#9bcdec;
+	font-family:'Courier New', Courier, monospace;
+	border-style:outset;
+	font-size:95%;
+	font-weight:bold;
+	border-width:.09em;
+	border-color:#cccc66;
+	margin-left:0.188em;
+	position:relative;
+	padding-left:0.15em;
+	padding-right:0.15em;
+}
+
+
+.speakers a:link {
+	
+	background-color: #9bcdec;
+	color: #cccc66;
+	font-family:alegreya, serif;
+	border-style:outset;
+	border-width:0.063em;
+	font-weight:bold;
+	border-color:#cccc66;
+	padding:0.250em;
+	margin-left:0.188em;
+	position:relative;
+	padding-left:0.125em;
+	padding-right:0.125em;
+	text-align:center;
+	font-size:100%;
+	}
+	
+	
+.speakers a:hover, a:active, a:focus	{
+	color:#cccc66;
+	
+	font-family:alegreya, serif;
+	border-style:outset;
+	font-size:95%;
+	font-weight:bold;
+	border-width:.09em;
+	border-color:#cccc66;
+	margin-left:0.188em;
+	position:relative;
+	padding-left:0.125em;
+	padding-right:0.125em;
+
+}
+	
+.tapes a:link {
+	
+	background-color:#006fb5;
+	color: #9bcdec;
+	font-family:alegreya, serif;
+	font-weight:bold;
+	padding:0.250em;
+	margin-left:0.188em;
+	position:relative;
+	padding-left:0.125em;
+	padding-right:0.125em;
+	border-style:outset;
+	border-width:0.063em;
+	font-weight:bold;
+	border-color:#cccc66;
+	display:inline-block;
+	width:6em;
+	font-size:130%;
+	}
+	
+	
+.tapes a:hover, a:active, a:focus	{
+	color: #9bcdec;
+	font-family: "&nbsp;&nbsp;Georgia", "Times New Roman", Times, serif;
+	border-style: outset;
+	font-size: 95%;
+	font-weight: bold;
+	border-width: .09em;
+	border-color: #cccc66;
+	margin-left: 0.188em;
+	position: relative;
+	padding-left: 0.125em;
+	padding-right: 0.125em;
+	display:block;
+	width:6em;
+}
+
+.left	{
+	background-color: #9bcdec;
+}
+
+.left a:link, a:visited, a:hover, a:active, a:focus {
+	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+.container {
+	border: 0.063em solid #cccc66;
+	width: 100%;
+	max-width: 93.750em;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
+	min-width: 48.750em;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	background-color: #138ece;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+}
+
+.container a:link, a:visited, 	{
+	 /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	color:#00e;
+	text-decoration: none;
+	font-size: 100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	}
+	
+.container a:hover, a:active, a:focus	{
+	color:#00e;
+	text-decoration: none;
+	font-size: 90%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight:700;
+	border:none;
+	}
+
+.mContainer {
+	border: 0.063em solid #cccc66;
+	width: 100%;
+	max-width: 200.000em;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
+	min-width: 20.000em;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	background-color: #138ece;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-color: #fff;
+	border: 0.063em solid #cccc66;
+	width:100%;
+}
+
+#meetinglist p {
+	padding: .2em;
+		margin-left:50px;
+
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	float: right;
+	width: 20.8%;
+	background-color: #84c4e8;
+	padding-bottom: 0.625em;
+	border: 0.063em solid #cccc66;
+	position:relative;
+	overflow:hidden;
+}
+.content {
+	padding: 0.625em 1.875em;
+	width: 70%;
+	float: left;
+	border: 0.063em solid #cccc66;
+	background-color: #9bcdec;
+	position:relative;
+	overflow:hidden;
+}
+
+.outside	{
+	background-color:#ffffff;
+	margin-left:3.125em;
+	border-style:groove;
+	border-width:0.250em;
+	border-color:#cccc66;
+}
+
+.mContent {
+	padding: 0.625em 1.875em;
+	width: 100%;
+	background-color: #9bcdec;
+	position:relative;
+	overflow:hidden;
+}
+
+.mLinks	{
+	padding: 0.625em 1.875em;
+	width: 100%;
+	float: left;
+	border: 0.063em solid #cccc66;
+	background-color: #9bcdec;
+	position:relative;
+	overflow:hidden;
+	font-size: x-large;
+}
+
+.links a:link, .links a:visited	 {
+		color: #cccc66;
+		background-color:#006fb5;
+		font-family: alegreya, serif;
+		font-size:80%;
+		}
+		
+.links a:hover, .links a:active, .links a:focus	 {
+		color: #cccc66;
+		background-color:#006fb5;
+		font-family: alegreya, serif;
+		font-size:77%;
+		font-weight:800;
+		}		
+		
+.links	{
+	background-color: #006fb5;
+	font-size: 100%;
+	font-family: alegreya, serif;
+	margin-top: 2em;
+	}
+		
+.area a:link, .area a:visited		{
+	color: #cccc66;
+	background-color:#006fb5;
+	font-family: alegreya, serif;
+		font-size:80%;
+		}
+		
+.area a:hover, .area a:active, .area a:focus		{
+	color: #cccc66;
+	background-color:#006fb5;
+	font-family: alegreya, serif;
+		font-size:77%;
+		font-weight:800;
+		}		
+		
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 0.938em 0.938em 2.500em; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-left:0.125em solid #cccc66; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	border-right:0.125em solid #cccc66;
+	border-top:0.250em solid #cccc66;
+	border-bottom:0.250em solid #cccc66;	
+	margin-bottom: 0.938em; /* this creates the space between the navigation on the content below */
+}
+
+ul.nav li {
+	
+	border-bottom:0.250em solid #cccc66; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 0.313em 0.313em 0.313em 0.938em;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	text-decoration: none;
+	background-color: #006fb5;
+	color: #cccc66;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background-color: #9bcdec;
+	color: #ffffff;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:102%;
+}
+
+.area	{
+	padding-left: 1.250em;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 0.625em 0;
+	color:#FFFFFF;
+	background-color: #006fb5;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	text-align:center;
+}
+.footer a, .footer a:visited, .footer a:hover, .footer a:active, .footer a:focus {
+	color:#cccc66;
+		background-color: #006fb5;
+		font-weight:normal;
+		}
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 0.500em;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 0.500em;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 0.063em;
+	line-height: 0em;
+}
+
+#ac-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(255,255,255,.6);
+z-index: 1001;
+}
+.popup{
+width:87%;
+height: 100%;
+background: #9bcdec;
+border: 5px solid #cccc66;
+border-radius: 25px;
+-moz-border-radius: 25px;
+-webkit-border-radius: 25px;
+box-shadow: #64686e 0px 0px 3px 3px;
+-moz-box-shadow: #64686e 0px 0px 3px 3px;
+-webkit-box-shadow: #64686e 0px 0px 3px 3px;
+position: relative;
+top: 15px; left: 37.5px;
+}
+
+</style>[if lte IE 7]>
+<style>
+.content { margin-right: -0.063em; } /* this 1px negative margin can be placed on any of the columns in this layout with the same corrective effect. */
+ul.nav a { zoom: 1; }  /* the zoom property gives IE the hasLayout trigger it needs to correct extra whiltespace between the links */
+</style>
+<![endif]

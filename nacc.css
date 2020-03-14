@@ -1,0 +1,170 @@
+/*
+	Styles for the NA Cleantime Calculator (NACC).
+
+	These are the base styles and should not be changed
+	unless you know what you are doing.
+*/
+
+div.nacc_wrapper {
+	width: 532px;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	border: 3px solid #cccc66;
+	font-size: 1em;
+	color: black;
+}
+
+div.nacc_main {
+	margin: 0;
+	padding: 10px;
+}
+
+div.nacc_results {
+	margin: 0;
+	padding: 10px;
+}
+
+span.nacc_title {
+	display: block;
+	margin: 0 0 20px 0;
+	padding: 0;
+	font-size: 1.5em;
+	text-align: left;
+}
+
+span.nacc_prompt {
+	display: block;
+	margin: 0 0 5px 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+form.nacc_form {
+	margin: 0 auto 0 auto;
+	padding: 0;
+}
+
+select.nacc_month_sel,
+select.nacc_day_sel,
+select.nacc_year_sel {
+	float: left;
+	margin: 0 5px 0 0;
+}
+
+input.nacc_calc_btn {
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+a.nacc_reset_link:visited,
+a.nacc_reset_link {
+	display: block;
+	margin: 0;
+	padding: 0;
+	float: right;
+	font-weight: bold;
+	font-size: .9em;
+}
+
+a.nacc_reset_link:active,
+a.nacc_reset_link:hover {
+}
+
+a.nacc_change_link:visited,
+a.nacc_change_link {
+	display: block;
+	float: right;
+	margin: -1.5em 0 0 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: .9em;
+	text-decoration: none;
+}
+
+a.nacc_change_link:active,
+a.nacc_change_link:hover {
+}
+
+div.nacc_msg {
+	margin: 0  0 10px 0;
+	padding: 5px;
+	border-top: 2px solid #333;
+	border-left: 2px solid #333;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	font-weight: bold;
+	font-size: 1em;
+	text-align: left;
+}
+
+div.nacc_keytags {
+	margin: 0;
+	padding: 1.5em 5px 5px 5px;
+	border-top: 2px solid #333;
+	border-left: 2px solid #333;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	font-weight: bold;
+	font-size: 1em;
+	text-align: left;
+}
+
+div.nacc_keytags_layout_chained {
+	width: 141px;
+	margin: 0 auto 0 auto;
+	padding: 176px 0 0 0;
+}
+
+div.nacc_keytags_layout_tabletop {
+	margin: 0 auto 0 auto;
+	padding: 114px 0 0 90px;
+}
+
+/* This is a class selector only */
+img.nacc_keytag_img_chained {
+	display: inline;
+	width: 141px;
+	height: 256px;
+	margin: -176px 0 0 0;
+	border: none;
+}
+
+/* This is a class selector only */
+img.nacc_keytag_img_tabletop {
+	display: inline;
+	width: 141px;
+	height: 256px;
+	margin: -114px 0 0 -90px;
+	border: none;
+}
+
+/* This is a class selector only */
+/* This is for IE5/6  only */
+span.nacc_keytag_img_chained {
+	display: block;
+	width: 141px;
+	height: 256px;
+	margin: -176px 0 0 0;
+	border: none;
+}
+
+/* This is a class selector only */
+/* This is for IE5/6  only */
+span.nacc_keytag_img_tabletop {
+	display: inline-block;
+	width: 141px;
+	height: 256px;
+	margin: -114px 0 0 -90px;
+	border: none;
+}
+
+/* This is a class selector only */
+div.nacc_clearing_div {
+	clear: both;
+}
+
+/* This is a class selector only */
+/* CSS Holy Hack fix for Peekaboo Bug */
+div.nacc_pb_fix {
+	height: 1%;
+}
