@@ -1,5 +1,21 @@
- # wheelingna.com
-WASCNA - Wheeling Area Service Committee of Narcotics Anonymous 
+# addToGithub whenDone
+
+## Software 
+
+- node >link
+- npm >link
+- sass >link
+
+## How to 
+
+npm run {script-name}  
+
+## About
+
+- ITCSS >link
+- SASS  
+- BEM >link 
 
 
-## happy happy joy joy here we go again 
+- SVG >link
+   - sprite sheet >link 

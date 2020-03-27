@@ -1,0 +1,36 @@
+.c-lit {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+
+  p {
+    font-size: 3rem;
+    text-align: center;  
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+  &__pamphlets {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem; 
+
+    img { 
+
+      width: 70px; 
+      height: 152px;
+      margin: 2rem;
+    }
+     
+
+  }
+
+
+}

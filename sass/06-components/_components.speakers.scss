@@ -1,0 +1,54 @@
+.c-speakers {
+
+  margin: auto;
+
+  &--title {
+    margin: 2rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  &__hg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 2rem;
+    margin: 2rem;
+
+    a {
+      padding: 1.5rem;
+      margin: 0 3rem;
+      text-align: center;
+    }
+  }
+
+  &__events {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+      padding: 1.5rem;
+      font-size: 2.8rem;
+      margin: 0 3rem;
+      text-align: center;
+    }
+  }
+
+  &__event {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+
+    h1{ 
+      text-align: center;
+    }
+  }
+
+}

@@ -1,0 +1,54 @@
+.c-help {
+
+  background-color: rgba(0, 58, 36, 0.3); 
+  padding: 3rem;
+  margin: auto;
+
+  &__intro {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+  }
+
+  &__description {
+    margin-bottom: 1.6rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+  }
+
+  &__pamphlets {
+
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a { 
+      margin: 1rem;
+    }
+
+    img {
+      width: 105px; 
+      height: 228px; 
+      
+    }
+  }
+
+  &__outro {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+
+    &--p {
+      margin-bottom: 1.6rem;
+      margin-left: 1rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  
+
+}

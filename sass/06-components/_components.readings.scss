@@ -1,0 +1,21 @@
+.c-readings {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+
+  &__reading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem;
+
+    img {
+      width: 12rem;
+      height: 18rem;
+    }
+  }
+
+
+}

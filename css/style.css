@@ -1,39 +1,275 @@
-/* ==============================================================
------- Interface -----
-============================================================== */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
 
-.main {
-  max-width: 640px;
-  margin: auto;
-}
-  
-.container {
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
 
-  margin-top: 1rem;
-  padding: 2rem 1rem;
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 3rem;
+  background-color: gray; }
+
+.o-container {
+  max-width: rem-calc(1200px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: rem-calc(10);
+  padding-right: rem-calc(10);
+  background-color: white; }
+
+.c-header {
+  width: 100%;
+  background-color: #8090AB; }
+
+.c-bg {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: auto; }
+  .c-bg::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(0deg, rgba(5, 5, 5, 0.87), rgba(0, 0, 0, 0.73));
+    z-index: 1; }
+  .c-bg__img {
+    -o-object-fit: fill;
+    object-fit: fill;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0; }
+  .c-bg__container {
+    position: relative;
+    z-index: 100;
+    margin: 1rem 3rem; }
+  .c-bg__hl {
+    padding: 2rem;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: white;
+    transform: translateX(0%) translateY(-12%); }
+    .c-bg__hl--lg {
+      font-weight: 300;
+      text-transform: uppercase;
+      line-height: 1.7;
+      font-size: 4rem; }
+    .c-bg__hl--md {
+      font-size: 2.8rem;
+      font-weight: 400;
+      line-height: 1.3;
+      margin-bottom: 1.5rem; }
+    .c-bg__hl--sm {
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin-bottom: 1rem; }
+
+.c-touch {
+  background-color: rgba(0, 58, 36, 0.3);
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  
-  }
+  justify-content: space-around;
+  padding: 3rem; }
+  .c-touch__btn {
+    background-color: rgba(245, 245, 245, 0.603);
+    width: 18rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 5px #976623;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 1rem 2rem; }
+  .c-touch__icon {
+    width: 6rem;
+    height: 6rem;
+    fill: #003a24; }
+  .c-touch__title {
+    color: #003a24; }
 
-.container a {
-  margin: 3px;
-}
-  
-.nav {
+.c-updates {
+  padding: 2rem; }
+  .c-updates__title {
+    text-align: center;
+    font-size: 3rem; }
+
+.c-help {
+  background-color: rgba(0, 58, 36, 0.3);
+  padding: 3rem;
+  margin: auto; }
+  .c-help__intro {
+    margin-bottom: 1rem;
+    font-size: 1.6rem; }
+  .c-help__title {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: black; }
+  .c-help__description {
+    margin-bottom: 1.6rem;
+    margin-left: 1rem;
+    font-size: 1.2rem; }
+  .c-help__pamphlets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .c-help__pamphlets a {
+      margin: 1rem; }
+    .c-help__pamphlets img {
+      width: 105px;
+      height: 228px; }
+  .c-help__outro {
+    margin-bottom: 1rem;
+    font-size: 1.6rem; }
+    .c-help__outro--p {
+      margin-bottom: 1.6rem;
+      margin-left: 1rem;
+      font-size: 1.2rem; }
+
+.c-jft {
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 0.125em;
+  padding: 0.313em;
+  border-color: #cccc66; }
+  .c-jft__link {
+    display: flex;
+    flex-direction: column; }
+  .c-jft__img {
+    width: 50px;
+    height: 70px; }
+
+.c-calendar h1 {
+  text-align: center;
+  padding: 2rem; }
+
+.c-calendar div {
+  border: 3px solid black; }
+
+.c-calendar iframe {
+  height: 100rem;
+  width: 100%; }
+
+.c-na h1 {
+  text-align: center;
+  padding: 2rem; }
+
+.c-na__links {
   display: flex;
   flex-direction: column;
-  width: 100px;
-  height: 100%;
-  box-shadow: 0 2.5px 5px rgba(25, 25, 25, 0.1);
-}
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem; }
+  .c-na__links p {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center; }
 
-.nav p {
+.c-na__top {
+  font-size: 3rem;
+  padding: 1rem;
+  color: rgba(0, 255, 157, 0.418);
+  border: 5px orangered solid; }
+
+.c-speakers {
+  margin: auto; }
+  .c-speakers--title {
+    margin: 2rem;
+    font-size: 3rem;
+    text-align: center; }
+  .c-speakers__hg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 2rem;
+    margin: 2rem; }
+    .c-speakers__hg a {
+      padding: 1.5rem;
+      margin: 0 3rem;
+      text-align: center; }
+  .c-speakers__events {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly; }
+    .c-speakers__events a {
+      padding: 1.5rem;
+      font-size: 2.8rem;
+      margin: 0 3rem;
+      text-align: center; }
+  .c-speakers__event {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem; }
+    .c-speakers__event h1 {
+      text-align: center; }
+
+.c-pro h3 {
+  font-size: 3rem;
   text-align: center;
-}
+  margin: 1rem; }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
------- Interface -----
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.c-pro p {
+  margin: 2rem;
+  font-size: 1.6rem; }
 
+.c-lit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem; }
+  .c-lit p {
+    font-size: 3rem;
+    text-align: center; }
+  .c-lit a {
+    text-decoration: none; }
+  .c-lit__pamphlets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem; }
+    .c-lit__pamphlets img {
+      width: 70px;
+      height: 152px;
+      margin: 2rem; }
+
+.c-readings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .c-readings__reading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem; }
+    .c-readings__reading img {
+      width: 12rem;
+      height: 18rem; }
+
+.c-service {
+  font-size: 3rem; }
+  .c-service h3 {
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem; }
+  .c-service p {
+    margin: 2rem; }

@@ -1,0 +1,12 @@
+$columns: 12;
+$gutter: 20;
+
+.o-container {
+    max-width: rem-calc($global-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: rem-calc($gutter/2);
+    padding-right: rem-calc($gutter/2);
+    background-color: lighten($color: gray, $amount: 90%);
+    
+}
