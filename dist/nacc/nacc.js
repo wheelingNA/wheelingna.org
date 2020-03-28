@@ -29,9 +29,9 @@
             .
             .
             .
-            <link rel="stylesheet" href="../../nacc.1.6/dist/nacc/nacc.css" type="text/css" />
-            <link rel="stylesheet" href="../../nacc.1.6/dist/nacc/nacc_theme_bt.css" type="text/css" />
-            <script type="text/javascript" src="../../nacc.1.6/dist/nacc/nacc.js"></script>
+            <link rel="stylesheet" href="../../nacc.1.6//dist/nacc/nacc.css" type="text/css" />
+            <link rel="stylesheet" href="../../nacc.1.6//dist/nacc/nacc_theme_bt.css" type="text/css" />
+            <script type="text/javascript" src="../../nacc.1.6//dist/nacc/nacc.js"></script>
             .
             .
             .
@@ -41,7 +41,7 @@
             text out of the JavaScript file, and give you a much smaller file. In that case, the
             script would look like this:
 
-                <script type="text/javascript" src="../../nacc.1.6/dist/nacc/nacc.js.php"></script>
+                <script type="text/javascript" src="../../nacc.1.6//dist/nacc/nacc.js.php"></script>
 
     The best way to invoke it is to put a call to this function in an onload() event:
 
@@ -74,8 +74,8 @@
                                 |
                                 cleantime_calc.html <- Contains the code that calls the NACC
                                     The <head> code would look like this:
-                                        <link rel="stylesheet" href="../../nacc.1.6/special_code/dist/nacc/nacc.css" type="text/css" />
-                                        <script type="text/javascript" src="../../nacc.1.6/special_code/dist/nacc/nacc.js"></script>
+                                        <link rel="stylesheet" href="../../nacc.1.6/special_code//dist/nacc/nacc.css" type="text/css" />
+                                        <script type="text/javascript" src="../../nacc.1.6/special_code//dist/nacc/nacc.js"></script>
                                 |
                                 special_code                    <- An in-between directory
                                     |
@@ -87,7 +87,7 @@
                                         |                          |-------- These are the only files/directories
                                         nacc_theme_?.css    	<---         necessary for normal use.
                                         |                          |
-                                        dist/images                  <---
+                                        /dist/images                  <---
 
                         Would need:
 
@@ -1204,7 +1204,7 @@ function NACC_CleanTime ( pContainerId, pPathToNACC, pUseCookie, pChained, pHide
             days        integer - The total number of days between the cleandate's last year/month anniversary and today
 
         Function Return:
-            array of string - The list of tag dist/images, given as src URIs.
+            array of string - The list of tag /dist/images, given as src URIs.
     */
     function BuildKeyTagList (totalDays, years, months, days) {
         if (gChained) {
@@ -1216,46 +1216,46 @@ function NACC_CleanTime ( pContainerId, pPathToNACC, pUseCookie, pChained, pHide
 
         var imageList = new Array();
 
-        imageList[0] = gPathToNACC + 'dist/images/Day_1' + fileEnd;
+        imageList[0] = gPathToNACC + '/dist/images/Day_1' + fileEnd;
 
         if (totalDays >= 30) {
-            imageList[1] = gPathToNACC + 'dist/images/Day_30' + fileEnd;
+            imageList[1] = gPathToNACC + '/dist/images/Day_30' + fileEnd;
         }
 
         if (totalDays >= 60) {
-            imageList[2] = gPathToNACC + 'dist/images/Day_60' + fileEnd;
+            imageList[2] = gPathToNACC + '/dist/images/Day_60' + fileEnd;
         }
 
         if (totalDays >= 90) {
-            imageList[3] = gPathToNACC + 'dist/images/Day_90' + fileEnd;
+            imageList[3] = gPathToNACC + '/dist/images/Day_90' + fileEnd;
         }
 
         if (!years) {
             if (months >= 6) {
-                imageList[4] = gPathToNACC + 'dist/images/Month_6' + fileEnd;
+                imageList[4] = gPathToNACC + '/dist/images/Month_6' + fileEnd;
             }
             if (months >= 9) {
-                imageList[5] = gPathToNACC + 'dist/images/Month_9' + fileEnd;
+                imageList[5] = gPathToNACC + '/dist/images/Month_9' + fileEnd;
             }
         }
         else {
-            imageList[4] = gPathToNACC + 'dist/images/Month_6' + fileEnd;
-            imageList[5] = gPathToNACC + 'dist/images/Month_9' + fileEnd;
-            imageList[6] = gPathToNACC + 'dist/images/Month_12' + fileEnd;
+            imageList[4] = gPathToNACC + '/dist/images/Month_6' + fileEnd;
+            imageList[5] = gPathToNACC + '/dist/images/Month_9' + fileEnd;
+            imageList[6] = gPathToNACC + '/dist/images/Month_12' + fileEnd;
 
             if ((years == 1 && months >= 6) || (years > 1)) {
-                imageList[7] = gPathToNACC + 'dist/images/Month_18' + fileEnd;
+                imageList[7] = gPathToNACC + '/dist/images/Month_18' + fileEnd;
             }
             
             decades = gUseDecadesTag && (years > 19);
             
             for (var c = 8, year = 2; year <= years; c++, year++) {
-                imageList[c] = gPathToNACC + 'dist/images/Month_24' + fileEnd;
+                imageList[c] = gPathToNACC + '/dist/images/Month_24' + fileEnd;
                 if ( decades && (year > 10) && !(year % 10)) {
-                    imageList[c] = gPathToNACC + 'dist/images/Decades' + fileEnd;
+                    imageList[c] = gPathToNACC + '/dist/images/Decades' + fileEnd;
                     }
                 else {
-                    imageList[c] = gPathToNACC + 'dist/images/Month_24' + fileEnd;
+                    imageList[c] = gPathToNACC + '/dist/images/Month_24' + fileEnd;
                     }
             }
         }
