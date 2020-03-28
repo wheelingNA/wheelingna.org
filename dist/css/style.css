@@ -223,6 +223,48 @@ body {
     .c-speakers__event h1 {
       text-align: center; }
 
+.c-hg {
+  margin: auto; }
+  .c-hg--title {
+    margin: 2rem;
+    font-size: 3rem;
+    text-align: center; }
+  .c-hg__info {
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    margin: auto; }
+    .c-hg__info a {
+      padding: 1.5rem;
+      margin: 0 3rem;
+      text-align: center; }
+  .c-hg__tapes {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .c-hg__tape {
+    flex: 1 1 30rem;
+    padding: 1.5rem;
+    font-size: 2.8rem;
+    margin: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+  .c-hg__speaker {
+    font-size: 2.5rem;
+    font-weight: 700; }
+  .c-hg__from {
+    font-size: 1.8rem;
+    font-weight: 400; }
+  .c-hg__date {
+    font-size: 1.5rem;
+    font-weight: 300; }
+
 .c-pro h3 {
   font-size: 3rem;
   text-align: center;
