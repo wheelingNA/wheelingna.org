@@ -29,9 +29,9 @@
             .
             .
             .
-            <link rel="stylesheet" href="../../nacc.1.6/dist/nacc/dist/nacc/nacc.css" type="text/css" />
-            <link rel="stylesheet" href="../../nacc.1.6/dist/nacc/dist/nacc/nacc_theme_bt.css" type="text/css" />
-            <script type="text/javascript" src="../../nacc.1.6/dist/nacc/dist/nacc/nacc.js"></script>
+            <link rel="stylesheet" href="../../nacc.1.6/dist/nacc/nacc.css" type="text/css" />
+            <link rel="stylesheet" href="../../nacc.1.6/dist/nacc/nacc_theme_bt.css" type="text/css" />
+            <script type="text/javascript" src="../../nacc.1.6/dist/nacc/nacc.js"></script>
             .
             .
             .
@@ -41,7 +41,7 @@
             text out of the JavaScript file, and give you a much smaller file. In that case, the
             script would look like this:
 
-                <script type="text/javascript" src="../../nacc.1.6/dist/nacc/dist/nacc/nacc.js.php"></script>
+                <script type="text/javascript" src="../../nacc.1.6/dist/nacc/nacc.js.php"></script>
 
     The best way to invoke it is to put a call to this function in an onload() event:
 
@@ -74,8 +74,8 @@
                                 |
                                 cleantime_calc.html <- Contains the code that calls the NACC
                                     The <head> code would look like this:
-                                        <link rel="stylesheet" href="../../nacc.1.6/dist/nacc/special_code/dist/nacc/nacc.css" type="text/css" />
-                                        <script type="text/javascript" src="../../nacc.1.6/dist/nacc/special_code/dist/nacc/nacc.js"></script>
+                                        <link rel="stylesheet" href="../../nacc.1.6/special_code/dist/nacc/nacc.css" type="text/css" />
+                                        <script type="text/javascript" src="../../nacc.1.6/special_code/dist/nacc/nacc.js"></script>
                                 |
                                 special_code                    <- An in-between directory
                                     |
@@ -1265,7 +1265,7 @@ function NACC_CleanTime ( pContainerId, pPathToNACC, pUseCookie, pChained, pHide
 
     /********************
         This takes the calculated list of tags, and creates a bunch of floated <img> elements that correspond to the list.
-        This will take the keytag layout preference into account, and will select the correct dist/images accordingly.
+        This will take the keytag layout preference into account, and will select the correct images accordingly.
 
         Parameters:
             imageList   array of string - The list of image src names.
@@ -1389,7 +1389,7 @@ function NACC_CleanTime ( pContainerId, pPathToNACC, pUseCookie, pChained, pHide
 	}
 	
 	/*
-		We need to add the following code so that IE6 will cache background dist/images.
+		We need to add the following code so that IE6 will cache background images.
 		By design it will not!!!
 		IE5.x and IE7 will, but not IE6.
 	
