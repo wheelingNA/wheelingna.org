@@ -5,7 +5,7 @@
   justify-content: space-evenly;
 
 
-  &__reading {
+  &__preview {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -16,6 +16,23 @@
       height: 18rem;
     }
   }
+
+  &__reading {
+    text-align: center;
+    width: 85vw;
+    font-size: 3rem;
+  }
+
+  &__permission {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 3rem;
+  }
+
+
+  ////////////////////////////////////////////////////////
+  /// individual readings 
+
 
 
 }
