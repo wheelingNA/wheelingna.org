@@ -315,3 +315,7 @@ body {
     padding: 1rem; }
   .c-service p {
     margin: 2rem; }
+
+.c-footer {
+  display: flex;
+  flex-direction: column; }
