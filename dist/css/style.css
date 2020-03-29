@@ -298,14 +298,22 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly; }
-  .c-readings__reading {
+  .c-readings__preview {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 2rem; }
-    .c-readings__reading img {
+    .c-readings__preview img {
       width: 12rem;
       height: 18rem; }
+  .c-readings__reading {
+    text-align: center;
+    width: 85vw;
+    font-size: 3rem; }
+  .c-readings__permission {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 3rem; }
 
 .c-service {
   font-size: 3rem; }
@@ -318,4 +326,7 @@ body {
 
 .c-footer {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2rem; }
