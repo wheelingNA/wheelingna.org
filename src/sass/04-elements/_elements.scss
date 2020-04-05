@@ -1,12 +1,9 @@
-html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-}
+///*------------------------------------*\
+//    #ELEMENTS
+//   ## HTML |  Body
+//  ### Links  |  Typography  |  Lists  |  Tables  |  Forms
+// #### Audio  |  Images  |  Video     
+//\*------------------------------------*/
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
-    padding: 3rem;
-    background-color: gray;
-}
+//\*------ T Y P O G R A P H Y------------------------------*/
+@import "elements.typography"; 

@@ -1,0 +1,45 @@
+.p-about {
+
+  
+  padding: 3rem;
+  margin: auto;
+
+
+  &__pamphlets {
+
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    @include respond(sm) {
+      justify-content: space-evenly;
+    }
+
+    a { 
+    
+      margin: 1rem;
+      text-align: center;
+
+      @include respond(sm) {
+        flex: 0 0 20%;
+        margin: auto;
+      }
+
+    img {
+      width: 10.5rem; 
+      height: 22.8rem; 
+
+      @include respond(sm) {
+        width: 50%;
+        height: 50%;
+        margin: auto;
+      }
+    }
+
+   }
+
+  }
+
+
+  
+}

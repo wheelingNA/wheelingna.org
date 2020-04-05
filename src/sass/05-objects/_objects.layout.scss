@@ -1,0 +1,59 @@
+///*---------H E A D E R---------------------------------*\
+
+
+.l-header {
+  height: 25vh;
+  position: relative;
+  overflow: hidden;
+  margin: auto; 
+
+  @include respond(sm) {
+    height: 23vh;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(0deg, rgba(5, 5, 5, 0.712), rgba(0, 0, 0, 0.562));
+    z-index: 1; }
+
+  &__img {
+    -o-object-fit: fill;
+    object-fit: fill;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0; }
+
+    &__text-box {
+      position: relative;
+      padding: 2rem;
+      margin: 2rem;
+      z-index: 100; 
+      transform: translateX(0%) translateY(-18%);
+
+  }
+
+}
+
+///*---------N A V I G A T I O N -------------------------*\
+
+
+
+///*---------F O O T E R---------------------------------*\
+
+.l-footer {
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2rem;
+
+}

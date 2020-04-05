@@ -1,12 +1,31 @@
+/*-------------------------------------------------*\
+//    #OBJECTS
+//   ## Wrapper  |  Container  |  Grid  |  Object Fit
+\*-------------------------------------------------*/
+
+
 $columns: 12;
 $gutter: 20;
 
-.o-container {
+#o-container {
     max-width: rem-calc($global-width);
     margin-left: auto;
     margin-right: auto;
     padding-left: rem-calc($gutter/2);
     padding-right: rem-calc($gutter/2);
-    background-color: lighten($color: gray, $amount: 90%);
+    background-color: lighten(gray, 60%);
     
 }
+
+
+.o-wrapper {
+  background-color: rgba(245, 245, 245, 0.815);
+  padding: 3rem;
+}
+
+
+///*---------L A Y O U T---------------------------------*\
+@import "objects.layout"; 
+
+///*---------P A G E S------------------------------------*\
+@import "objects.pages"; 
